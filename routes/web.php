@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\TestController;
+use App\Http\Controllers\hukusyabeController;
+use App\Http\Controllers\itanjiController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -33,3 +35,9 @@ require __DIR__.'/auth.php';
 
 Route::get('/test', [TestController::class, 'gettest'])
 ->name('test');
+
+Route::get('/hukusyabe', [hukusyabeController::class, 'gettest'])
+->name('hukusyabe');
+
+Route::get('/itanji', [itanjiController::class, 'gettest'])
+->name('itanji');
